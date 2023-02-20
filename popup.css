@@ -1,0 +1,48 @@
+/* Set the background color of the popup */
+body {
+  background-color: #f0f0f0;
+  padding: 10px;
+  font-family: Arial, sans-serif;
+}
+
+/* Style the heading */
+h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Style the form */
+form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+/* Style the label */
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+/* Style the text input */
+input[type="text"] {
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 5px;
+}
+
+/* Style the submit button */
+button {
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Style the output div */
+#output {
+  margin-top: 10px;
+}

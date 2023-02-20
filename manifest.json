@@ -1,0 +1,36 @@
+{
+  "name": "Intern",
+  "description": "An AI-powered chatbot that can assist you with your daily tasks",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "icons": {
+    "256": "icons/icon256.png"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "256": "icons/icon256.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*/*",
+        "http://*/*"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ],
+  "permissions": [
+    "tabs",
+    "activeTab",
+    "storage",
+    "contextMenus",
+    "http://localhost:3000/"
+  ]
+}
